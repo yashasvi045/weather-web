@@ -72,30 +72,40 @@ input {
 
 .container {
     padding: 40px;
-    min-height: 100vh;
+    min-height: calc(100vh - 100px);
     height: auto;
     background-image: url(background.png);
-    background-size: 100%;
-    
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease;
 }
 
 .dashboard {
-    height: 250px;
+    min-height: 200px;
+    height: auto;
     border-radius: 20px;
     background: #00B4DB;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     padding: 20px;
+    transition: all 0.3s ease;
 }
 
 .weathercard {
-    display: grid;
+    display: none;
     place-items: center;
     padding: 10px;
-    background-color: lightgray;
+    background: linear-gradient(rgb(74, 74, 228), rgb(31, 14, 31));
     border-radius: 10px;
     margin: 10px;
     border: 1px solid gray;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.weathercard.show {
+    display: grid;
+    opacity: 1;
 }
 
 .searchbar {
@@ -123,12 +133,16 @@ input {
     border: none;
     display: grid;
     justify-content: left;   
+    background-color: white;
 }
 
 button {
     border: none;
-    height: 30px;
+    height: 35px;
     width: 90px;
+    border-radius: 10px;
+    color: white;
+    background: linear-gradient(rgb(114, 217, 252), rgb(52, 129, 205));
 
 }
 

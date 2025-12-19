@@ -38,5 +38,9 @@ function displayWeather(data) {
 
     const iconCode = data.weather[0].icon;
     document.getElementById('weatherIcon').src = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
+
+    // Show the weather card with animation
+    const weatherCard = document.querySelector('.weathercard');
+    weatherCard.classList.add('show');
 }
 
