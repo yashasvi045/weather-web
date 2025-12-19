@@ -92,13 +92,12 @@ input {
 }
 
 .weathercard {
-    display: none;
     place-items: center;
     padding: 10px;
-    background: linear-gradient(rgb(74, 74, 228), rgb(31, 14, 31));
+    background: linear-gradient(lightblue, whitesmoke);
     border-radius: 10px;
-    margin: 10px;
-    border: 1px solid gray;
+    margin: 20px;
+    border: 1px solid white;
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -134,6 +133,8 @@ input {
     display: grid;
     justify-content: left;   
     background-color: white;
+    color: gray;
+    padding-left: 20px;
 }
 
 button {
