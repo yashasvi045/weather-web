@@ -81,7 +81,6 @@ input {
 
 .dashboard {
     height: 250px;
-    border: 1px solid white;
     border-radius: 20px;
     background: #00B4DB;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
@@ -102,8 +101,34 @@ input {
 .searchbar {
     display: grid;
     margin: 20px;
-    padding: 10px;
-    border: 1px solid black;
     justify-content: center;
     align-content: center;
 }
+
+form {
+    display: grid;
+    justify-content: left;
+}
+
+label {
+    display: grid;
+    justify-content: left;
+    font-size: 30px;
+    color: white;
+}
+
+input {
+    margin: 20px;
+    border-radius: 20px;
+    border: none;
+    display: grid;
+    justify-content: left;   
+}
+
+button {
+    border: none;
+    height: 30px;
+    width: 90px;
+
+}
+
